@@ -16,8 +16,9 @@ desired_capabilities = {
     'visual':true,
     'video': true,
 
-    //ADD GEOLOCATION BASED ON COUNTRY CODE
-    'geoLocation':'fr'  
+    // ADD THE APP URL OF OTHER APPS THAT YOU'D LIKE TO INSTALL ON THE SAME DEVICE
+    'otherApps':['lt:// ', 'lt:// ']   //ENTER THE OTHER APP URLs HERE IN AN ARRAY FORMAT
+
 }
 
 driver = wd.promiseRemote(`https://${username}:${accesskey}@mobile-hub.lambdatest.com/wd/hub`)
